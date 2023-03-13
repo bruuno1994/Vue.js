@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Aula 05 - Praticando com Vue</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Exercícios</h1>
+
+        <h2>Alerta com Vue</h2>
+            <button v-on:click="botaoErrado()">Clique aqui</button>
+        <hr />
+
+        <h2>Imagem com Vue</h2>
+            <img v-bind:src="url" v-bind:style="imagem">
+        <hr />
+
+        <h1>Desafios</h1>
+
+        <h2>Classe CSS</h2>
+        <div v-bind:style="classeCSS">
+
+           Elemento com classe
+
+        </div>
+
+        <h2>Mostre ou esconda</h2>
+        <button @click=toggleMostrar>Mostrar/Esconder</button>
+              <p v-if="mostrar">Este é o elemento a ser mostrado/ocultado</p>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
