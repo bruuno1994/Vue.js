@@ -5,12 +5,14 @@ createApp({
         return {
             url: '/Aula_05/ps5.jpg',
             imagem: {
-                width: '500px',
+                width: '200px',
             },
             classeCSS: {
                 color: 'red',
             },
-            mostrar: false
+            mostrar: false,
+            img1: '/Aula_05/lampada-apagada.jpg',
+            img2: '/Aula_05/lampada-acesa.jpg'
         }
     },
     methods: {
@@ -18,11 +20,7 @@ createApp({
              alert("Você clicou no botão errado, tente novamente!")
         },
         toggleMostrar: function () {
-            if(this.mostrar == false) {
-                this.mostrar = true
-            } else if(this.mostrar == true) {
-                this.mostrar = false
-            }
+            this.mostrar = !this.mostrar
         }
     }
 }

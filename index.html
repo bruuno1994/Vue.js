@@ -29,8 +29,13 @@
         </div>
 
         <h2>Mostre ou esconda</h2>
-        <button @click=toggleMostrar>Mostrar/Esconder</button>
-              <p v-if="mostrar">Este é o elemento a ser mostrado/ocultado</p>
+        <button @click=toggleMostrar>Abre/Fecha</button>
+            <p v-if="mostrar">Este é o elemento a ser mostrado</p>
+            <p v-else="mostrar">Este é o elemento a ser ocultado</p>
+
+        <img v-if="mostrar" src="img1" v-bind:style="imagem">
+        <img v-else="mostrar" src="img1" v-bind:style="imagem">
+
     </div>
 <script src="script.js"></script>
 </body>
